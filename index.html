@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia corrupti sed sit esse aspernatur cupiditate quidem exercitationem eius, tempora iste earum. Qui animi incidunt minima atque voluptate. Ullam, ut?</p>
+
+    <form id="survey-form">
+        <label id="name-label">user-name<input id="name" type="text" placeholder="name" required></label>
+        <label id="email-label">email address<input id="email" type="email" placeholder="email" required></label> 
+        <label id="number-label">number<input type="number" name="number" id="number" min="1" max="50" placeholder="number"></label>
+        <select name="dropdown" id="dropdown">
+            <option value="1">Student</option>
+            <option value="2">Full Time</option>
+        </select>
+        
+        <p>would you like notifications to be on?</p>
+        <label for="recommendation-y"><input value="radio" name="attribute" type="radio" id="recommendation-y">yes</label>
+        <label for="recommendation-n"><input value="radio" name="attribute" type="radio" id="recommendation-n">no</label>
+
+        <p>what type of dev would you like to be?</p>
+        <label><input type="checkbox" value="checkbox">Front-end</label>
+        <label><input type="checkbox" value="checkbox">back-end</label>
+        <label><input type="checkbox" value="checkbox">full-stack</label>
+
+        <textarea name="comment" id="comment" cols="10" rows="5"></textarea>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
