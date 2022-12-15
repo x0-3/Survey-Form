@@ -5,61 +5,81 @@
 }
 
 body{
-    background-image: url(https://images.pexels.com/photos/5933792/pexels-photo-5933792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url("https://images.pexels.com/photos/7512950/pexels-photo-7512950.jpeg?auto=compress&cs=tinysrgb&w=600");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+h1, p{
+    color:#003b62;
+
+}
+
+/* ********************************************************intro title and description******************************************************* */
 
 #title{
     text-align: center;
     margin: 21px 0 12px 0;
-    color: white;
 }
+
 
 #description{
     width: 55%;
     margin: auto;
-    color: white;
 }
 
+/* ***************************************************************form section*************************************************************** */
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 24px auto;
-    background-color: beige;
+    background-color: #c5d1dd;
     width: 30%;
     padding: 20px;
     border-radius: 35px;
 }
+
+/* *********************************************************name email number section******************************************************** */
 #name-label, #email-label,#number-label{
     display: flex;
     flex-direction:column;
     margin: 5px;
     height: 38px;
+    color:#003b62;
+
 }
 
+/* *************************************************************dropdown section************************************************************* */
 #dropdown{
     margin: 10px auto;
     height: 30px;
 }
+
+/* **************************************************************input titles**************************************************************** */
 
 label{
     height: 30px;
     margin: auto;
     display: flex;
     align-items: center;
+    color:#003b62;
+
 }
 
+/* ************************************************************placeholder text************************************************************** */
 input{
     text-align: center;
 }
 
+/* ************************************************************comment section*************************************************************** */
+
 #comment{
     width: 50%;
 }
+
+/* *************************************************************submit button**************************************************************** */
 
 #submit{
     margin: 23px 0 0 0;
@@ -70,15 +90,29 @@ input{
 }
 
 #submit:hover{
-    background-color: green;
+    background-color: #003b62;
     color: white;
 }
+
+/* ****************************************************************footer******************************************************************** */
+
+footer{
+    background-color:#003b62;
+    text-align: center;
+    color: white;
+    padding: 7px;
+}
+
+
+/* **************************************************************Media query***************************************************************** */
 
 @media only screen and (min-width: 768px) and (max-width: 956px) {
     form{
         width: 50%;
     }
+
 }
+
 @media only screen and (max-width: 767px) {
 
     #title{
